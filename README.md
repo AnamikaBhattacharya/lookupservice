@@ -1,23 +1,23 @@
-# lookupservice
+ #lookupservice
 
-#This is a sample rest url lookup service which is used to provide the url reputation for the input url.
+This is a sample rest url lookup service which is used to provide the url reputation for the input url.
 
-#In order to deploy the service goto target folder and get the lookupservice.war
-#Put the war file in tomcat webapps folder and start the tomcat.
+In order to deploy the service goto target folder and get the lookupservice.war
+Put the war file in tomcat webapps folder and start the tomcat.
 
-#The get request looks like:
-#http://<IP:port>/lookupservice/restapi/urlinfo?url=<url>
+The get request looks like:
+http://<IP:port>/lookupservice/restapi/urlinfo?url=<url>
 
-#Sample: http://localhost:8080/lookupservice/restapi/urlinfo?url=http://google.com
+Sample: http://localhost:8080/lookupservice/restapi/urlinfo?url=http://google.com
 
-#and the response is like:
-#{
+and the response is like:
+{
 
-#   "reputation": "Safe",
+   "reputation": "Safe",
 
- #   "url": "http://google.com"
+    "url": "http://google.com"
 
-#}
+}
 
 The supported reputation is:
 safe
